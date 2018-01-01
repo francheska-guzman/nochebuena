@@ -17,10 +17,10 @@ export default class ProfileScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>First name:</Text>
-        <Text>Last name:</Text>
-        <Text>Date of birth:</Text>
-        <Text>Country:</Text>
+        <Text style={styles.description}>First name:</Text>
+        <Text style={styles.description}>Last name:</Text>
+        <Text style={styles.description}>Country:</Text>
+        <Text style={styles.description}>Date of birth:</Text>
       </ScrollView>
     );
   }
@@ -31,5 +31,8 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#fff'
+  },
+  description: {
+    fontSize: 20
   },
 });

@@ -17,9 +17,9 @@ export default class SettingsScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>Change E-mail Address</Text>
-        <Text>Change Password</Text>
-        <Text>Security Questions</Text>
+        <Text style={styles.description}>Change E-mail Address</Text>
+        <Text style={styles.description}>Change Password</Text>
+        <Text style={styles.description}>Security Questions</Text>
       </ScrollView>
     );
   }
@@ -30,5 +30,8 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
     backgroundColor: '#fff'
+  },
+  description: {
+    fontSize: 20
   },
 });

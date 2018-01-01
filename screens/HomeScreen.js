@@ -40,8 +40,8 @@ export default class HomeScreen extends React.Component {
           </View>
 
           <View style={styles.helpContainer}>
-            <TouchableOpacity onPress={this._handleHelpPress} style={styles.helpLink}>
-              <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
+            <TouchableOpacity onPress={this._handleGitHubPress} style={styles.helpLink}>
+              <Text style={styles.helpLinkText}>More projects on GitHub.</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
@@ -77,9 +77,9 @@ export default class HomeScreen extends React.Component {
     WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/guides/development-mode');
   };
 
-  _handleHelpPress = () => {
+  _handleGitHubPress = () => {
     WebBrowser.openBrowserAsync(
-      'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
+      'https://github.com/francheska-guzman'
     );
   };
 }
