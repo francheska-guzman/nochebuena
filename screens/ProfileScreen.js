@@ -1,5 +1,13 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Image, Text, View } from 'react-native';
+import {
+  Image,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 
 export default class ProfileScreen extends React.Component {
   static navigationOptions = {
@@ -9,9 +17,9 @@ export default class ProfileScreen extends React.Component {
   render() {
     return (
       <ScrollView style={styles.container}>
-        <Text>First Name:</Text>
-        <Text>Last Name:</Text>
-        <Text>Date of Birth:</Text>
+        <Text>First name:</Text>
+        <Text>Last name:</Text>
+        <Text>Date of birth:</Text>
         <Text>Country:</Text>
       </ScrollView>
     );
