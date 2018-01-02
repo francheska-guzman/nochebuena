@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "react-native",
+    "name": "Nochebuena",
     "description": "My first react native application.",
-    "slug": "react-native",
+    "slug": "nochebuena",
     "privacy": "public",
     "sdkVersion": "24.0.0",
     "platforms": ["ios", "android"],
